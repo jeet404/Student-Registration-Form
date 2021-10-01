@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h2>Student Registration Form</h2>
+    </div>
+    <div class="boss">
+      <div class="side-left">
+        <p>
+          Hello All. I made this form using HTML. This is dynamic form and it
+          inserts data to the database. Enjoy the form and insert some data.
+        </p>
+        <div class="cdata">developed by &copy;JAP</div>
+      </div>
+
+      <div class="main">
+        <form action="config.php" method="post">
+          <table align="center" cellpadding="10">
+            <tr>
+              <td>First Name:-</td>
+              <td><input type="text" name="firstName" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>Last Name:-</td>
+              <td><input type="text" name="lastName" maxlength="50" /></td>
+            </tr>
+
+            <tr>
+              <td>Email ID:-</td>
+              <td>
+                <input
+                  type="email"
+                  name="emailId"
+                  id="mail"
+                  onChange="mailchk()"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Mobile Number:-</td>
+              <td>
+                <input
+                  type="text"
+                  name="mobileNumber"
+                  maxlength="10"
+                  placeholder="10 Digits Allowed"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Gender:-</td>
+              <td>
+                <input type="radio" name="Gender" value="Male" />
+                Male
+                <input type="radio" name="Gender" value="Female" />
+                Female
+              </td>
+            </tr>
+            <tr>
+              <td>Date of Birth(DOB):-</td>
+              <td>
+                <input type="date" name="DOB" />
+              </td>
+            </tr>
+            <tr>
+              <td>Address:-<br /><br /><br /></td>
+              <td><textarea name="Address" rows="10" cols="50"></textarea></td>
+            </tr>
+            <tr>
+              <td>City:-</td>
+              <td><input type="text" name="City" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>Pin Code:-</td>
+              <td>
+                <input
+                  type="Number"
+                  name="pinCode"
+                  maxlength="6"
+                  placeholder="Max 6 Numbers Allowed"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>State:-</td>
+              <td><input type="text" name="State" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>Country:-</td>
+              <td><input type="text" name="Country" placeholder="India" /></td>
+            </tr>
+            <tr>
+              <td>Hobbies:-<br /><br /><br /></td>
+              <td>
+                <input type="checkbox" name="Hobby" value="Drawing" />
+                Drawing
+                <input type="checkbox" name="Hobby" value="Singing" />
+                Singing
+                <input type="checkbox" name="HobbyDancing" value="Dancing" />
+                Dancing
+                <input type="checkbox" name="Hobby" value="Cooking" />
+                Sketching
+                <br />
+                <input type="checkbox" name="Hobby" value="Other" />
+                Others
+                <input type="text" name="Hobby" maxlength="50" />
+              </td>
+            </tr>
+            <tr>
+              <td>Qualification:-<br /><br /><br /></td>
+              <td>
+                <br />
+                <input
+                  type="checkbox"
+                  name="Qualification"
+                  value="High School"
+                />
+                High School(10th)<br />
+                <input
+                  type="checkbox"
+                  name="Qualification"
+                  value="Higher School"
+                />
+                Higher School(12th)<br />
+                <input
+                  type="checkbox"
+                  name="Qualification"
+                  value="Graduation"
+                />
+                Graduation(Bachelors)<br />
+                <input
+                  type="checkbox"
+                  name="Qualification"
+                  value="Post Graduation"
+                />
+                Post Graduation(Masters)<br />
+                <input type="checkbox" name="Qualification" value="Phd" />
+                Phd
+              </td>
+            </tr>
+            <tr>
+              <td>Courses<br />Applied For:-</td>
+              <td>
+                <input type="radio" name="Course" value="BCA" />
+                BCA(Bachelor of Computer Applications)<br />
+                <input type="radio" name="Course" value="B.Com" />
+                B.Com(Bachelor of Commerce)<br />
+                <input type="radio" name="Course" value="B.Sc" />
+                B.Sc(Bachelor of Science)<br />
+                <input type="radio" name="Course" value="B.A" />
+                BA(Bachelor of Arts)<br />
+                <input type="radio" name="Course" value="BCA" />
+                MCA(Master of Computer Applications)<br />
+                <input type="radio" name="Course" value="B.Com" />
+                M.Com(Master of Commerce)<br />
+                <input type="radio" name="Course" value="B.Sc" />
+                M.Sc(Master of Science)<br />
+                <input type="radio" name="Course" value="B.A" />
+                MA(Master of Arts)<br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="side-right">
+        <p>
+          I made this during my precticle class.I upload this on GitHub for new
+          students, because they gain some knowlage and will make their code
+          better.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="cpy">
+        <p><a href="https://github.com/jap1203">>>...Visit for more...<<</a></p>
+      </div>
+    </div>
+  </body>
+</html>
